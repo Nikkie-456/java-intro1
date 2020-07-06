@@ -6,9 +6,10 @@ public static void main(String[] args)
   String studentRoom  = "Room 34B";
   String studentGrade = "B+";
   int studentMarks = 450;
-  String studentSport = "Hockey";
+  String studentSport = "Hocke";
   boolean feePaid = false;
   double studentFeeBal = 45000.00;
+
 
  System.out.println("Students Name:" +studentName + '\n' + "Students Admission No:" +studentAdmNo + '\n' + "Students Class:" +studentClass + '\n' + "Students Room:" +studentRoom + '\n' + "Students Grade:" +studentGrade + '\n' + "Total Marks:" +studentMarks + '\n' + "Sport:" +studentSport + '\n' +  "Fees Paid:" +feePaid + '\n' + "Fee Balance:" +studentFeeBal);
 }}
