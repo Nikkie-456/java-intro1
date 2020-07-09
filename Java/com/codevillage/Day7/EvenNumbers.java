@@ -29,8 +29,7 @@ public class EvenNumbers {
             {
                 System.out.println("Num is:" +p);
             }
-            p++;
-        }
+        } p++;
         } while (p <=100);
     }
 }

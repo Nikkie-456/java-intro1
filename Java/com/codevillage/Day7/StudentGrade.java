@@ -13,54 +13,54 @@ public class StudentGrade {
         int sci =0;
         int rec = 1;
         int cnt = 0;
+        int cnt2 = 0;
         int MeanScore =0;
         String MeanGrade ="";
         int GrandScore =0;
         int GrandMean =0;
+        int NoOfSub = 0;
+        String subjectName="";
+        int subMarks =0;
 
         Scanner stud = new Scanner(System.in);
 
         System.out.println("Enter Number Of Student");
         cnt = stud.nextInt();
 
+        System.out.println("Enter Number Of Subjects");
+        NoOfSub = stud.nextInt();
+
         if(cnt > 0) {
         while(rec <=cnt){
             System.out.println("Enter Student Name");
-            name = stud.nextLine();
+            name = stud.next();
 
             System.out.println("Enter Student ID No");
-            idNo = stud.nextLine();
+            idNo = stud.next();
 
-            System.out.println("Enter Score For Maths");
-            math = stud.nextInt();
 
-            System.out.println("Enter Score For English");
-            eng = stud.nextInt();
+            for (int i=1; i<=NoOfSub; i++){
+                {
+            System.out.println("Enter Name Of Subject");
+            subjectName = stud.next();
 
-            System.out.println("Enter Score For Kiswahili");
-            swa = stud.nextInt();
+            System.out.println("Enter Marks For Subject");
+            subMarks = stud.nextInt();
 
-            System.out.println("Enter Score For Science");
-            sci = stud.nextInt();
+                MeanScore +=subMarks/NoOfSub;
+                MeanGrade = getGrade(MeanScore);
+            }
+                System.out.println("Student Name:" +name);
+                System.out.println("Student Id:" +idNo);
+                System.out.println("Subject :\t" +subjectName);
+                System.out.println("Subject Score:\t" +subMarks);
+                System.out.println("Mean Score:" +MeanScore);
+                System.out.println("Mean Grade:" +MeanGrade);
 
-            MeanScore = (math+eng+sci+swa)/4;
-            MeanGrade = getGrade(MeanScore);
+                System.out.println("Grand Score:" +GrandScore);
+                System.out.println("Grand Grade:" +getGrade(GrandScore));
+            }
 
-            GrandScore +=(MeanScore/3);
-
-            System.out.println("Student No: \t" +rec);
-
-            System.out.println("Student Name:" +name);
-            System.out.println("Student Id:" +idNo);
-            System.out.println("Maths Score:" +math + "\t Math Grade \t"+getGrade(math));
-            System.out.println("English Score:" +eng + "\t English Grade \t"+getGrade(eng));
-            System.out.println("Kiswahili Score:" +swa + "\t Swahili Grade \t"+getGrade(swa));
-            System.out.println("Science Score:" +sci + "\t Science Grade \t"+getGrade(sci));
-            System.out.println("Mean Score:" +MeanScore);
-            System.out.println("Mean Grade:" +MeanGrade);
-
-            System.out.println("Grand Score:" +GrandScore);
-            System.out.println("Grand Grade:" +getGrade(GrandScore));
 
            rec++;
         }}
