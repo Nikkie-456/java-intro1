@@ -23,11 +23,11 @@ public class MyStudent {
         this.regNo=regNo;
     }
 
-  /*  public MyStudent(String name,String regNo,String address,String dob,int age) {
+   public MyStudent(String name,String regNo,String address,String dob,int age) {
         this.name= name;
         this.regNo= regNo;
         this.address  = address;
         this.dob = dob;
         this.age = age;
-    }*/
+    }
 }
