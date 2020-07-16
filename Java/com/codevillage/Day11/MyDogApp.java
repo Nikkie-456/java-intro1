@@ -10,6 +10,7 @@ public class MyDogApp {
         System.out.println("Name:"+bulldog.getName());
         System.out.println("Color:"+bulldog.getColor());
         System.out.println("Tail:"+bulldog.getShortTail());
+        bulldog.canBark();
 
     }
 }
