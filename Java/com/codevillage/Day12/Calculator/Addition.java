@@ -10,7 +10,7 @@ public class Addition implements Calculator{
     }
 
     public double  setA(double i){
-        this.a=a;
+        this.a=i;
         return a;
     }
 
@@ -18,7 +18,7 @@ public class Addition implements Calculator{
         return b;
     }
 
-    public double  setB(double i){
+    public double  setB(double b){
         this.b=b;
         return b;
     }

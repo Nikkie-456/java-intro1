@@ -19,6 +19,8 @@ public class MyFunctions {
         return (g/p);
     }
 
+
+
     static double getProd1(double p,double g,double k) {
         return (g*k*p);}
 
