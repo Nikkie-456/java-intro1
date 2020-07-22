@@ -14,6 +14,7 @@ public class MyArraySum {
         int score_1 = 0;
         int arrayLeng = 0;
         int scre;
+        int[] scores2 = new int[10];
 
 
         scores[0] = 82;
@@ -53,7 +54,6 @@ public class MyArraySum {
 
             System.out.println("Scores are:" + totalSum);
         }
-
 
     }
 }

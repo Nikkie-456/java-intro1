@@ -19,12 +19,18 @@ public class MyFunctions {
         return (g/p);
     }
 
+    public static double getSum(double g,double p) {
+        return (g+p);
+    }
 
+   public static double getAvg(double g,double p) {
+       return (g/p);
+   }
 
     static double getProd1(double p,double g,double k) {
         return (g*k*p);}
 
-    static String getGrade(int gradeScore) {
+   public static String getGrade(double gradeScore) {
         String grade1 = "";
 
         if (gradeScore > 0 && gradeScore < 40)
