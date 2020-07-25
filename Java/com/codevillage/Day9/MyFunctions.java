@@ -19,6 +19,10 @@ public class MyFunctions {
         return (g/p);
     }
 
+    public static double getSub(double g,double p) {
+        return (g-p);
+    }
+
     public static double getSum(double g,double p) {
         return (g+p);
     }

@@ -7,19 +7,20 @@ public class Customer {
     private String name;
     private int idNo;
 
-    public ArrayList<Account> getAccounts() {
-        return accounts;
-    }
-
-    public void setAccounts(ArrayList<Account> accounts) {
-        this.accounts = accounts;
-    }
-
     private String address;
     private String phoneNo;
     private ArrayList<Account> accounts;
 
-  public Customer(String name, int idNo, String address, String phoneNo, ArrayList<Account> accounts) {
+    int pinNo=1977;
+
+   /* public Customer(String name, int idNo, String address, String phoneNo) {
+        this.name = name;
+        this.idNo = idNo;
+        this.address = address;
+        this.phoneNo = phoneNo;
+    }*/
+
+   public Customer(String name, int idNo, String address, String phoneNo, ArrayList<Account> accounts) {
         this.name = name;
         this.idNo = idNo;
         this.address = address;
@@ -27,7 +28,14 @@ public class Customer {
         this.accounts = accounts;
     }
 
-    int pinNo=1977;
+
+    public ArrayList<Account> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(ArrayList<Account> accounts) {
+        this.accounts = accounts;
+    }
 
     public String getName() {
         return name;
@@ -61,4 +69,6 @@ public class Customer {
         this.phoneNo = phoneNo;
     }
 
+    public void add() {
+    }
 }

@@ -8,14 +8,23 @@ public class Account {
     private int accNumber;
     private String accType;
     private double accBalance;
+    private ArrayList<Transaction> transactions;
 
-    public Account(String accName, int accNumber, String accType, double accBalance) {
+    public Account(String accName, int accNumber, String accType, double accBalance, ArrayList<Transaction> transactions) {
         this.accName = accName;
         this.accNumber = accNumber;
         this.accType = accType;
         this.accBalance = accBalance;
+        this.transactions = transactions;
     }
 
+    public ArrayList<Transaction> getTransactions() {
+        return transactions;
+    }
+
+    public void setTransactions(ArrayList<Transaction> transactions) {
+        this.transactions = transactions;
+    }
 
     public String getAccName() {
         return accName;
