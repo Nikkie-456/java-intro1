@@ -52,5 +52,20 @@ public class MyFunctions {
 
     }
 
+    public static String getCurrDesc(String n){
+         String name="";
+         if (n=="KSH"){
+             name="Kenya Shillings";}
+         else if (n=="USD")
+             name ="US Dollar";
+         else if(n=="AUS")
+             name="Australian Dollar";
+         else if(n=="EUR")
+             name="Euro";
+         else
+             name="British Pound";
+         return name;
+    }
+
 
 }
