@@ -39,23 +39,20 @@ public class MyBankApp {
             String gender = dbDetails.next();
 
             System.out.println("Enter Pin No");
-            String pin_no = dbDetails.next();
+            int pin_no = dbDetails.nextInt();
 
-            try {
-                PreparedStatement ps = myConn.prepareStatement("insert into customer(id_number,full_name,gender,pin_no) values ('?','?','?','?')");
+
+                PreparedStatement ps = myConn.prepareStatement("insert into customer(id_number,full_name,gender,pin_no) values (?,?,?,?)");
                 ps.setString(1, idNumber);
                 ps.setString(2, name);
                 ps.setString(3, gender);
-                ps.setString(4, pin_no);
+                ps.setInt(4, pin_no);
                 ps.executeUpdate();
 
                 while (rs1.next()) {
                     System.out.println(rs1.getString("full_name") + "\t" + rs1.getString("pin_no"));
                 }
 
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         } catch (Exception e) {
         e.printStackTrace();
     }finally {
